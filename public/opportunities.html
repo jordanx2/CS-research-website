@@ -1,0 +1,227 @@
+<!DOCTYPE html><!-- This file uses HTML5-->
+<html lang="en">
+	<head>
+		<title>Opportunities | CS </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet"  href="css/style.css" />
+		<link rel="icon" href="img/favicon/favicon.ico" > 
+		<script>
+			function start(){
+				slideShow();
+				canvasCycle();
+			}
+		</script>
+
+	</head>
+
+	<body onload = "start()"><!-- This is the start of the web page-->
+	
+		<header><!-- This is the Header bar-->
+			<div id="banner-image"><!-- This contains the banner image-->
+					<div id="site-logo">
+						<a href="index.html"><img src="img/site-logo2.png" alt="site-logo"></a>
+					</div>
+
+					<h3><strong></strong> Research Project</h3>
+					<h4><strong></strong>Computer Science Profile</h4>
+
+					<nav><!-- This is the Navigation bar-->
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="tech.html">Technical Skills</a></li>
+						<li><a href="com.html">Communications Skills</a></li>
+						<li><a href="opportunities.html">Opportunities</a></li>							
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+
+		<main >		
+			<div id='opportunities-main'>
+				<div id="up-btn" style="display: none;">
+					<a href="#banner-image"><img src="img/up-arrow.png" width=100 alt="Up-Arrow"></a>
+				</div>
+
+				<!-- <hr class='green-line'> -->
+				<div id='canvas-container'>
+					<h1 style="text-align: center;">Careers Available to <span class='cs-careers'>Computer Scientists</span></h1>
+					<canvas id="canvas" width=975 height=300 style="position: absolute; right: 0;"></canvas>
+				</div>
+				<!-- <hr class='green-line'> -->
+
+				<section id='canvas-wrapper'>		
+					<h1 style="text-align: center;">Top Companies for <span class='cs-careers'>Computer Scientists</span></h1>
+					<div id='company-slideshow-container-outter'>
+						<div id='company-slideshow-container'>
+							<div class='company-slideshow-child' style='border-top: none; border-left: none;'>
+								<figure class="slideshow">
+									<img src="img/companies-imgs/adobe.png" alt="adobe-logo">
+									<img src="img/companies-imgs/amazon.jpg" alt="amazon-logo">
+									<img src="img/companies-imgs/apple.png" alt="apple-logo">
+									<img src="img/companies-imgs/cisco.png" alt="cisco-logo">
+								</figure>
+							</div>
+
+							<div class='company-slideshow-child' style='border-top: none; border-right: none;'>
+								<figure class="slideshow">
+									<img src="img/companies-imgs/facebook.png" alt="facebook-logo">
+									<img src="img/companies-imgs/google.png" alt="google-logo">
+									<img src="img/companies-imgs/IBM.png" alt="IBM-logo">
+									<img src="img/companies-imgs/intel.png" alt="intel-logo">
+								</figure>
+							</div>
+
+							<div class='company-slideshow-child' style='border-bottom: none; border-left: none;'>
+								<figure class="slideshow">
+									<img src="img/companies-imgs/microsoft.jpg" alt="microsoft-logo">
+									<img src="img/companies-imgs/netflex.png" alt="netflex-logo">
+									<img src="img/companies-imgs/oracle.png" alt="oracle-logo">
+									<img src="img/companies-imgs/salesforce.png" alt="salesforce-logo">
+								</figure>
+							</div>
+
+							<div class='company-slideshow-child' style='border-bottom: none; border-right: none;'>
+								<figure class="slideshow">
+									<img src="img/companies-imgs/linkedin.png" alt="linkedin-logo">
+									<img src="img/companies-imgs/dell.png" alt="dell-logo">
+									<img src="img/companies-imgs/samsung.png" alt="samsung-logo">
+									<img src="img/companies-imgs/tesla.png" alt="tesla-logo">
+								</figure>
+							</div>
+						</div> <!-- End company-slideshow-container -->
+
+					</div> <!-- End company-slideshow-container-outter -->
+				</section>
+				<!-- <hr class='green-line'> -->
+
+		        <section id='iframe-section'>
+		        	<h1 style="text-align: center;">Useful Embedded Resources for <span class='cs-careers'>Computer Scientists</span></h1>
+
+		        	<div class='dynamic-frame-controls' style="position: relative; margin-left: 100px;">
+				        <button onclick="dynamicFrame(this)" name='show-all'>Show All</button>
+				        <button onclick="hideFrame(this)" name='hide-all'>Hide All</button>
+				    </div> <!-- End dynamic-frame-controls -->
+
+		        	<div class='dynamic-frame-wrapper-outter' style='border-left: none;'>
+
+		        		<div class='frame-info' style='position: absolute; left: 0'>
+				        	<h1>Codepen</h1>
+				        	<p>Codepen is online software tool used for developing HTML, CSS & JavaScript within the browser. Primarily used for showcasing unique and interesting web development elements. Can be viewed as an online code editor where the input and output are both displayed on the same web page.</p>
+
+							<p>As can be viewed from the window on the right, this is an example of RGB slider application that outputs the corresponding hexadecimal value. The HTML, CSS & JavaScript code can be all viewed within the window by navigating through the different tabbed panels. </p>
+				     
+
+				      
+				        </div>
+
+			        	<div class='dynamic-frame-wrapper'>
+			        		<div class='frame-control-wrap'>
+				        		<div class='frame-container'>	
+				        			<iframe name='frame1' src="about:blank"></iframe>
+				        		</div> <!-- End frame-container -->
+
+				        		<div class='dynamic-frame-controls'>
+				        			<button onclick="dynamicFrame(this)" name='btn1'>Show</button>
+				        			<button onclick="hideFrame(this)">Hide</button>
+				        		</div> <!-- End dynamic-frame-controls -->
+			        		</div>
+			        	</div> <!-- End dynamic-frame-wrapper -->
+		        	</div>
+
+		        	<div class='dynamic-frame-wrapper-outter' style='border-right: none;'>
+		        		<div class='frame-info' style='position: absolute; right: 0'>
+				        	<h1>CSS Tricks</h1>
+				        	<p>As what can probably be interpreted from the name of the site, this platform offers useful insights into the general workings of CSS. Ever since the sites inception from 2007, the platform grew far beyond simply being a site solely for CSS.</p>
+
+				        	<p>It now encompasses the whole basic stack of a simple page i.e., HTML, CSS, JavaScript. Provides extremely useful articles and tips all relating to front-end web development. </p>
+
+				        </div>
+			        	<div class='dynamic-frame-wrapper'>
+			        		<div class='frame-control-wrap'>
+				        		<div class='frame-container'>	
+				        			<iframe name='frame2' src="about:blank"></iframe>
+				        		</div> <!-- End frame-container -->
+
+				        		<div class='dynamic-frame-controls'>
+				        			<button onclick="dynamicFrame(this)" name='btn2'>Show</button>
+				        			<button onclick="hideFrame(this)">Hide</button>
+				        		</div> <!-- End dynamic-frame-controls -->
+			        		</div>
+			        	</div> <!-- End dynamic-frame-wrapper -->
+		        	</div>
+
+
+		        	<div class='dynamic-frame-wrapper-outter' style='border-left: none;'>
+
+		        		<div class='frame-info' style='position: absolute; left: 0'>
+				        	<h1>Wikipedia</h1>
+
+				        	<p>Prehab’s one of the largest and most popular sites on the web today Wikipedia. Wikipedia is an online encyclopaedia. The actual content and articles that is comprised of it is open source in the sense that anyone can edit any Wikipedia page. This often leads to reliability issues when using the platform as a means of research. But all the sources for the content on the actual page can be found in the references section of the page located at the very bottom.</p>
+
+				        	<p>In terms of using Wikipedia for a means of gathering useful information about Computer Science topics, then it’s fairly legit. It gives in dept explanations about keywords relating to CS and a vast range of related topics to the subject. Although there is a stigma around using Wikipedia for general learning and researching purposes due to the unreliability of the site (and rightly so), it’s an extremely valuable tool for quick explanations or to get a general overview of any particular topic.</p>
+				        </div>
+
+			        	<div class='dynamic-frame-wrapper'>
+			        		<div class='frame-control-wrap'>
+				        		<div class='frame-container'>	
+				        			<iframe name='frame3' src="about:blank"></iframe>
+				        		</div> <!-- End frame-container -->
+
+				        		<div class='dynamic-frame-controls'>
+				        			<button onclick="dynamicFrame(this)" name='btn3'>Show</button>
+				        			<button onclick="hideFrame(this)">Hide</button>
+				        		</div> <!-- End dynamic-frame-controls -->
+			        		</div>
+			        	</div> <!-- End dynamic-frame-wrapper -->
+		        	</div>
+		        	<div class='dynamic-frame-wrapper-outter' style='border-right: none;'>
+
+		        		<div class='frame-info' style='position: absolute; right: 0'>
+				        	<h1>W3C</h1>
+
+				        	<p>World Wide Web Consortium (W3C) is a community formed by members all across the globe. The intend of the W3C is to develop web standards with the help of full time staff and other contributors around the world. The W3C site itself contains everything from the standards that the organization releases, to general facts about W3C as well as some articles.</p>
+
+				        	<p>A useful source for anyone any individual looking to gain a better insight of what goes on under hood in regards to the web. Given that the organization itself is the one that sets standards for the web, this site takes a very comprehensive and thorough in-dept look at all the general aspects of the web.</p>
+
+				      
+				        </div>
+
+			        	<div class='dynamic-frame-wrapper'>
+			        		<div class='frame-control-wrap'>
+				        		<div class='frame-container'>	
+				        			<iframe name='frame1' src="about:blank"></iframe>
+				        		</div> <!-- End frame-container -->
+
+				        		<div class='dynamic-frame-controls'>
+				        			<button onclick="dynamicFrame(this)" name='btn4'>Show</button>
+				        			<button onclick="hideFrame(this)">Hide</button>
+				        		</div> <!-- End dynamic-frame-controls -->
+			        		</div>
+			        	</div> <!-- End dynamic-frame-wrapper -->
+		        	</div>
+
+		        </section>
+
+	    	</div>
+
+		</main>
+
+		<footer><!-- This is the Footer bar-->
+
+			<p><span class='colorfullone'>Internal</span> <span class='colorfulltwo'>&</span> <span class='colorfullone'>external</span> <span class='colorfulltwo'>services:</span> </p>
+               <p>
+               <a href="index.html"><span class='colorfulltwo'>Home</span></a> 
+			   <a href="map.html"><span class='colorfullone'>Site Map</span></a>
+               <a href="https://validator.w3.org/"><span class='colorfulltwo'>HTML Validator</span></a>			   
+			   <a href="contact.html"><span class='colorfullone'>Contact Us</span></a></p>
+			  
+			   <p> <span class='colorfullone'>&copy;</span> <span class='colorfulltwo'>2022</span> <span class='colorfullone'>Jordan</span> <span class='colorfulltwo'>Murray</span> <!-- &#9734; --></p> 
+        </footer>
+		
+	</body>
+	<script src='scripts/index.js'></script>
+	<script src="scripts/main.js"></script>
+	
+</html>
